@@ -1,9 +1,9 @@
 a = 1
 b = 2
 
-import add_0 as my_add_module
+import add_0
 
-result = my_add_module.add(a, b)
+result = add_0.add(a, b)
 
 print("{:d} + {:d} = {:d}".format(a, b, result))
 
