@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 def print_arguments(arguments):
     num_args = len(arguments) - 1
 
@@ -16,9 +14,9 @@ def print_arguments(arguments):
 
 if __name__ == "__main__":
     # Example usage:
-    command_line_arguments = ["", "Hello", "Holberton", "School", "98", "Battery", "street"]
+    command_line_arguments = ["", "Hello"]
     
-    # Call the function to print arguments
+    # Call the function to get the formatted output
     output = print_arguments(command_line_arguments)
     
     # Print the result
