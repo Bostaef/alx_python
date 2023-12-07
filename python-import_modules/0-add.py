@@ -1,8 +1,7 @@
 a = 1
 b = 2
 
-
-result = __import__("add_0").add(a, b)
+result = __import__("add_0", fromlist=["add"]).add(a, b)
 
 print("{:d} + {:d} = {:d}".format(a, b, result))
 
