@@ -1,7 +1,6 @@
 a = 1
 b = 2
 
-import add_0
 
 result = __import__("add_0").add(a, b)
 
