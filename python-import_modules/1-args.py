@@ -1,14 +1,25 @@
-from sys import argv
+#!/usr/bin/python3
 
-num_args = len(argv) - 1
+def print_arguments(arguments):
+    num_args = len(arguments) - 1
 
-print("{} argument{}:".format(num_args, "s" if num_args != 1 else ""), end=" ")
+    result = "{} argument{}:".format(num_args, "s" if num_args != 1 else "")
 
-if num_args == 0:
-    print(".")
-else:
-    print("")
+    if num_args == 0:
+        result += "."
+    else:
+        result += "\n"
+        for i in range(1, num_args + 1):
+            result += "{}: {}\n".format(i, arguments[i])
 
-    for i in range(1, num_args + 1):
-        print("{}: {}".format(i, argv[i]))
+    return result
 
+if __name__ == "__main__":
+    # Example usage:
+    command_line_arguments = ["", "Hello", "Holberton", "School", "98", "Battery", "street"]
+    
+    # Call the function to print arguments
+    output = print_arguments(command_line_arguments)
+    
+    # Print the result
+    print(output)
